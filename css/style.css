@@ -303,6 +303,12 @@ section {
 
 .gallery-item img {
     width: 100%;
+    z-index: -1;
+    transition: all 500ms linear;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
 }
 
 /*=========================================================
