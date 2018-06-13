@@ -2,18 +2,19 @@
                         NAVBAR
 /*=========================================================*/
 const $navbar = document.querySelector('.navbar');
+const $backToTop = document.querySelector('.back-to-top');
 
 function showHideNav() {
     if (window.scrollY > 50) {
         // Show White Nav
         $navbar.classList.add('navbar-white');
         // // Show Back To Top Button
-        // $("#back-to-top").fadeIn();
+        $backToTop.classList.add('dblock');
     } else {
         // Hide White Nav
         $navbar.classList.remove('navbar-white');
         // Hide Back To Top Button
-        // $("#back-to-top").fadeOut();
+        $backToTop.classList.remove('dblock');
     }
 }
 

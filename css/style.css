@@ -197,6 +197,27 @@ section {
     color: var(--main);
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 1px solid #fff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 200ms ease-in;
+    display: none;
+}
+
+.back-to-top:hover {
+    background: #fff;
+    color: var(--main);
+}
+
+.dblock {
+    display: block;
+}
+
 /*=========================================================
                         MENU
 /*=========================================================*/
