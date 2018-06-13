@@ -1,4 +1,24 @@
 /*=========================================================
+                        NAVBAR
+/*=========================================================*/
+const $navbar = document.querySelector('.navbar');
+
+function showHideNav() {
+    if (window.scrollY > 50) {
+        // Show White Nav
+        $navbar.classList.add('navbar-white');
+        // // Show Back To Top Button
+        // $("#back-to-top").fadeIn();
+    } else {
+        // Hide White Nav
+        $navbar.classList.remove('navbar-white');
+        // Hide Back To Top Button
+        // $("#back-to-top").fadeOut();
+    }
+}
+
+window.addEventListener('scroll', showHideNav);
+/*=========================================================
                             MENU
 /*=========================================================*/
 const $buttons = document.querySelectorAll('button[data-toggle]');
@@ -51,3 +71,4 @@ function initMap() {
         infoWindow.open(map, marker);
     });
 }
+

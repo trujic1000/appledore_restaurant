@@ -106,6 +106,58 @@ section {
 }
 
 /*=========================================================
+                        NAVBAR
+/*=========================================================*/
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: var(--main);
+}
+.navbar {
+    padding: 10px 80px;
+}
+
+.navbar-nav li {
+    padding: 0 5px;
+}
+
+.navbar-nav li a {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: all 200ms ease-in;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+    color: var(--main);
+    border-right: 2px solid var(--main);
+}
+
+.navbar-white {
+    background: #eee;
+    padding: 15px 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease-in;
+}
+
+.navbar-white .navbar-brand:hover,
+.navbar-white .navbar-brand:focus {
+    color: #000;
+}
+
+.navbar-white a {
+    color: var(--main);
+}
+
+.navbar-white li a:hover,
+.navbar-white li a:focus {
+    color: #000;
+    border-right: 2px solid #000;
+}
+
+
+/*=========================================================
                         SHOWCASE
 /*=========================================================*/
 #showcase {
@@ -142,7 +194,7 @@ section {
 }
 
 .arrow-down:hover {
-    color: #000;
+    color: var(--main);
 }
 
 /*=========================================================
