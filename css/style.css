@@ -84,6 +84,16 @@ section {
     color: #000;
 }
 
+.btn-outline-main {
+    border: 1px solid #fff;
+}
+
+.btn-outline-main:hover {
+    border: 1px solid var(--main);
+    background: var(--main);
+    color: #000;
+}
+
 .heading {
     position: relative;
     height: 300px;
@@ -116,8 +126,14 @@ section {
     padding: 10px 80px;
 }
 
+.navbar .nav-link.active {
+    color: var(--main);
+    border-right: 2px solid var(--main);
+}
+
 .navbar-nav li {
     padding: 0 5px;
+    display: inline-block;
 }
 
 .navbar-nav li a {
@@ -146,6 +162,11 @@ section {
     color: #000;
 }
 
+.navbar-white .nav-link.active {
+    color: #000;
+    border-right: 2px solid #000;
+}
+
 .navbar-white a {
     color: var(--main);
 }
@@ -155,7 +176,19 @@ section {
     color: #000;
     border-right: 2px solid #000;
 }
+.navbar-white .navbar-toggler,
+.navbar-white .navbar-toggler[aria-expanded="true"] i{
+    color: var(--main);
+}
 
+.navbar-toggler {
+    color: #fff;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus  {
+    outline: none;
+}
 
 /*=========================================================
                         SHOWCASE

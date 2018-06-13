@@ -4,6 +4,7 @@
 const $navbar = document.querySelector('.navbar');
 const $backToTop = document.querySelector('.back-to-top');
 
+
 function showHideNav() {
     if (window.scrollY > 50) {
         // Show White Nav
