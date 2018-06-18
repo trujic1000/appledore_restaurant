@@ -74,3 +74,23 @@ function initMap() {
     });
 }
 
+
+/*=========================================================
+                        SMOOTH SCROLLING
+/*=========================================================*/
+const links = document.querySelectorAll('.smooth-scroll');
+links.forEach(link => {
+    link.addEventListener('click', (e)=> {
+        // Preventing default link behavior
+        e.preventDefault();
+        // Getting href attribute of clicked link
+        const att = link.getAttribute('href');
+        // Selecting a section with that attribute
+        const section = document.querySelector(att);
+        // Scrolling to it
+        window.scrollTo({
+            top: section.offsetTop - 60,
+            behavior: 'smooth'
+        });
+    });
+});
